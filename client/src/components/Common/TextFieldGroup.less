@@ -1,0 +1,53 @@
+.custom-textField-group {
+  input[type="text"],
+  input[type="number"],
+  input[type="password"],
+  input[type="email"] {
+    text-align: left;
+    height: 25px;
+    font-size: 14px;
+    padding: 3px 15px;
+    margin-bottom: 26px;
+    border-radius: 2px;
+
+    @media screen and (max-width: 480px) {
+      padding: 0px 15px !important;
+      font-size: 15px !important;
+    }
+
+    @media screen and (max-width: 1024px) {
+      padding: 2px 15px;
+      font-size: 17px;
+    }
+  }
+}
+
+.is-invalid {
+  input[type="text"],
+  input[type="number"],
+  input[type="password"],
+  input[type="email"] {
+    margin-bottom: 0;
+    box-shadow: 0 0 10px #e84393;
+    border: 1px solid #e84393;
+  }
+}
+.is-info {
+  input[type="text"] {
+    margin-bottom: 0;
+  }
+}
+
+.error-input-container {
+  color: #e84393;
+  font-size: 13px;
+  margin-bottom: 10px;
+  float: left;
+}
+
+.info-input-container {
+  color: #dfe6e9;
+  font-size: 15px;
+  margin: 25px 0 5px;
+  display: flex;
+}

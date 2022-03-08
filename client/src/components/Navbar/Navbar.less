@@ -1,0 +1,90 @@
+.navbar {
+  position: sticky;
+  text-align: center;
+  padding: 30px 0;
+  border-bottom: 1px solid rgb(65, 48, 78);
+  @media screen and (max-width: 480px) {
+    padding: 20px 0;
+    h2 {
+      font-size: 115%;
+    }
+
+    .navbar-logo {
+      letter-spacing: 7px;
+    }
+  }
+
+  h2 {
+    color: rgb(227, 214, 255);
+    display: inline-block;
+  }
+
+  .navbar-logo {
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    text-shadow: 0 0 30px #fff;
+  }
+}
+
+.auth-links-container {
+  position: absolute;
+  right: 30px;
+  top: 23%;
+  font-size: 85%;
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 480px) {
+    top: 80px !important;
+    right: 24%;
+  }
+
+  .auth-link {
+    margin: 0 20px;
+    text-decoration: none;
+    color: rgb(176, 141, 223);
+    display: inline-block;
+  }
+
+  .signup {
+    border: 1px solid #d04ed6;
+    color: rgb(235, 226, 255);
+    border-radius: 4px;
+    padding: 6px 15px;
+    transition: background-color 0.1s ease-in;
+    &:hover {
+      background-color: #cf4ed628;
+    }
+  }
+
+  .name {
+    margin: 0 0 0 20px;
+  }
+}
+
+.guest-links {
+  top: 33%;
+}
+
+// Link underline effect
+.login {
+  text-decoration: none;
+  border-bottom: 0.7px solid #b08ddf;
+  padding-bottom: 0.3em;
+  @media screen and (max-width: 480px) {
+    border-bottom: none;
+  }
+}
+
+.login:hover {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23b08ddf' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-position: bottom;
+  background-repeat: repeat-x;
+  background-size: auto 2px;
+  border-bottom: 0;
+  padding-bottom: 0.3em;
+  text-decoration: none;
+  @media screen and (max-width: 480px) {
+    background-image: none;
+  }
+}
